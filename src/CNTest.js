@@ -136,7 +136,7 @@ class CNTest extends React.Component{
             this.state.questionData.map((q,key)=>(
               <div className="jumbotron border border-danger" style={QboxStyle} id={q.id}>
                 <h2 className="lead badge badge-danger" style={{margin:  "20px 0px 20px 0px",fontSize:"20px"}}>Question {q.id}</h2>
-                <p className="" style={{fontFamily: "sans-serif",fontSize:"20px",color: "black"}}>{q.quest}</p>
+                <div className="" style={{fontFamily: "sans-serif",fontSize:"20px",color: "black"}}>{q.quest}</div>
                 <ul className="list-inline">
                   <li style={listElementStyle} className="list-inline-item"><span className="badge" style={optNoStyle}>1</span><button style={btnStyle} id={`${key}opt1`} className="btn" value={q.id} onClick={this.handleClick(q.opt1,q.ans,key,1)}>{q.opt1}</button></li>
                   <li style={listElementStyle} className="list-inline-item"><span className="badge" style={optNoStyle}>2</span><button style={btnStyle} id={`${key}opt2`} className="btn" value={q.id} onClick={this.handleClick(q.opt2,q.ans,key,2)}>{q.opt2}</button></li>
@@ -147,8 +147,8 @@ class CNTest extends React.Component{
                  
                 </ul>
                <div className="text-center">
-                 {q.id!==1 && <a className="btn" href={`#${q.id-1}`} style={{width: "100px",marginTop:"20px",boxShadow:"1px 1px 10px",fontSize:"15px",marginRight:"10px"}}>Previous</a>}
-                 {q.id!==10 && <a className="btn" href={`#${q.id+1}`} style={{width: "100px",marginTop:"20px",boxShadow:"1px 1px 10px",fontSize:"15px",marginLeft:"10px"}}>Next</a>}
+                 {q.id!==1 && <a className="btn btn-primary" href={`#${q.id-1}`} style={{width: "100px",marginTop:"20px",boxShadow:"1px 1px 10px",fontSize:"15px",marginRight:"10px"}}>Previous</a>}
+                 {q.id!==10 && <a className="btn btn-secondary" href={`#${q.id+1}`} style={{width: "100px",marginTop:"20px",boxShadow:"1px 1px 10px",fontSize:"15px",marginLeft:"10px"}}>Next</a>}
                </div>
               </div>
             ))
