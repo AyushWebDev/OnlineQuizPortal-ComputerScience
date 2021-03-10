@@ -1,6 +1,6 @@
 body p
 {
-    color: aliceblue !important;
+    color: aliceblue;
 }
 .box-overlay{
     content: '';
@@ -15,18 +15,18 @@ body p
 .navbar 
 {
     height: 70px;
-    color: aliceblue !important;
+    color: aliceblue;
 }
 .fas,.far,.fab
 {
     font-size: large;
     padding: 1vw;
-    color: aliceblue !important;
+    color: aliceblue;
 }
 .btn {
     padding: 2px;
     height: min-content;
-    color: aliceblue !important;
+    color: aliceblue;
 }
 .dropdown-menu{
     padding: 10px;
